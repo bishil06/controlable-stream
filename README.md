@@ -45,7 +45,7 @@ Readable.from('abcdefghijk').pipe(new ControlableStream(1, 1)).pipe(process.stdo
 ### - Read file and print
 
 ![read-file-and-print](read-file-and-print.gif)  
-[test.txt](example.test.txt)
+[test.txt](example/test.txt)
 
 ```txt
 abcdefghijklmnop

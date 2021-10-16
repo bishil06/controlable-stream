@@ -1,3 +1,26 @@
+# Contents
+- [controlable-stream](#controlable-stream)
+  * [What controllable-stream can do](#what-controllable-stream-can-do)
+  * [Installation](#installation)
+  * [Usage example](#usage-example)
+    + [- Base](#--base)
+    + [- Print every second](#--print-every-second)
+    + [- Read file and print](#--read-file-and-print)
+    + [- parrarel copy](#--parrarel-copy)
+  * [API](#api)
+    + [Initialize the ControlableStream](#initialize-the-controlablestream)
+      - [Contructor Arguments](#contructor-arguments)
+    + [`ControlableStream.setOnSpeedChange(fn: OnSpeedChange | null): void`](#-controlablestreamsetonspeedchange-fn--onspeedchange---null---void-)
+    + [`ControlableStream.setOnAddHistory(fn: onAddHistory | null): void`](#-controlablestreamsetonaddhistory-fn--onaddhistory---null---void-)
+    + [`ControlableStream.setBytePerSec(bytePerSec: number): void`](#-controlablestreamsetbytepersec-bytepersec--number---void-)
+    + [`ControlableStream.setNumOfSendPerSec(numOfSendPerSec: number): void`](#-controlablestreamsetnumofsendpersec-numofsendpersec--number---void-)
+    + [`ControlableStream.setLimitStrict(limitStrict: 0 | 1 | 2): void`](#-controlablestreamsetlimitstrict-limitstrict--0---1---2---void-)
+    + [`ControlableStream.calcByteForSend(): number`](#-controlablestreamcalcbyteforsend----number-)
+    + [`ControlableStream.calcTimeToSpend(length: number): number`](#-controlablestreamcalctimetospend-length--number---number-)
+    + [`ControlableStream.getSpeed(): number`](#-controlablestreamgetspeed----number-)
+    + [`ControlableStream.getTotalByte(): number`](#-controlablestreamgettotalbyte----number-)
+  * [License](#license)
+
 # controlable-stream
 
 Controlable Stream for NodeJS  
